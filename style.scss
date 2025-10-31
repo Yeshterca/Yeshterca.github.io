@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: #ddd;
+	background: #fff;
   font: 18px/1.4 'Times New Roman';
   color: #001011;  /* normal text color */
 }
@@ -33,7 +33,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Times New Roman';
   color: #540B0E;  /* blog name */
-  font-weight: bold;
+  /*font-weight: bold;*/
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -44,29 +44,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
+h1 {font-size: 30px;
+  a {color: inherit;
   }
 }
 
-h2 {
-  font-size: 24px;
+h2 {font-size: 24px;}
+
+h3 {font-size: 20px;
 }
 
-h3 {
-  font-size: 20px;
+h4 {font-size: 18px;
+  color: #001011;
 }
 
-h4 {
-  font-size: 18px;
-  color: $gray;
+p {margin: 15px 0;
 }
 
-p {
-  margin: 15px 0;
-}
 /* LINKS*/
 a {
   color: #041B15;  /* default link color */
@@ -85,33 +79,26 @@ ul, ol {
   padding-left: 30px;
 }
 /* LISTS */
-ul {
-  list-style-type: disc;
+ul {list-style-type: disc;
 }
 
-ol {
-  list-style-type: decimal;
+ol {list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+ol ul, ul ol, ul ul, ol ol {margin: 0;
 }
 
-ul ul, ol ul {
-  list-style-type: circle;
+ul ul, ol ul {list-style-type: circle;
 }
 
-em, i {
-  font-style: italic;
+em, i {font-style: italic;
 }
 
-strong, b {
-  font-weight: bold;
+strong, b {font-weight: bold;
   color: #540B0E; /* Emphasized text uses accent color */
 }
 
-img {
-  max-width: 100%;
+img {max-width: 100%;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -160,7 +147,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid #fff;
 
   @include mobile {
     text-align: center;
@@ -196,9 +183,9 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #540B0E;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: 'Times New Roman';
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -206,7 +193,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: #fff;
   font-size: 16px;
 
   @include mobile {
@@ -217,7 +204,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: 'Times New Roman';
   font-size: 18px;
 
   @include mobile {
@@ -229,7 +216,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    /*color: $darkGray;*/
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -247,7 +234,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid #fff;
 }
 
 .posts > .post:last-child {
@@ -258,9 +245,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid #fff;
     padding: 0.1em 1em;
-    color: $gray;
+    color: #fff;
     font-size: 22px;
     font-style: italic;
   }
@@ -277,9 +264,9 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
 }
 
 footer {
