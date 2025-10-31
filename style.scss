@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $cambria;
-  color: $darkGray;
+	background: #E4DFDA;
+  font: 18px/1.4 Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #001011;  /* normal text color */
 }
 
 .container {
@@ -31,8 +31,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: Cambria, serif;
+  color: #540B0E;  /* blog name */
   font-weight: bold;
 
   line-height: 1.7;
@@ -67,21 +67,24 @@ h4 {
 p {
   margin: 15px 0;
 }
-
+/* LINKS*/
 a {
-  color: $blue;
+  color: #041B15;  /* default link color */
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: #706C61;
   }
+  &:visited {
+	color: #706C61;
+	}
 }
 
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
 }
-
+/* LISTS */
 ul {
   list-style-type: disc;
 }
@@ -104,6 +107,7 @@ em, i {
 
 strong, b {
   font-weight: bold;
+  color: #540B0E; /* Emphasized text uses accent color */
 }
 
 img {
@@ -117,17 +121,17 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: #706C61;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: #001011;
+  background: #dcdcdc;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: #001011;
+  background: #dcdcdc;
 }
 
 // Nicolas Gallagher's micro clearfix hack
