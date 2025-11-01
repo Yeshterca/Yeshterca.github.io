@@ -1,280 +1,80 @@
 ---
 ---
 
-//
-// IMPORTS
-//
-
-@import "reset";
-@import "variables";
-// Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
-
-html {
-  font-size: 100%;
-}
+$background: #fff;
+$text: #000;
+$accent: #706C61;
+$highlight: #540B0E;
 
 body {
-	background: #fff;
-  font: 18px/1.4 'Times New Roman';
-  color: #001011;  /* normal text color */
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Times New Roman';
-  color: #540B0E;  /* blog name */
-  /*font-weight: bold;*/
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
+  font-family: 'Inter', sans-serif;
+  background: $background;
+  color: $text;
+  margin: 0;
   padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
 }
 
-h1 {font-size: 30px;
-  a {color: inherit;
-  }
+/* HEADER */
+.site-header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid $accent;
 }
 
-h2 {font-size: 24px;}
-
-h3 {font-size: 20px;
-}
-
-h4 {font-size: 18px;
-  color: #001011;
-}
-
-p {margin: 15px 0;
-}
-
-/* LINKS*/
-a {
-  color: #041B15;  /* default link color */
+.nav a {
+  color: $accent;
   text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: #706C61;
+  margin-right: 1.5rem;
+  font-weight: 600;
+
+  &:hover {
+    color: $highlight;
   }
-  &:visited {
-	color: #706C61;
-	}
 }
 
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-/* LISTS */
-ul {list-style-type: disc;
-}
-
-ol {list-style-type: decimal;
+/* CONTENT */
+.content {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1rem;
 }
 
-ol ul, ul ol, ul ul, ol ol {margin: 0;
+/* POSTS */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-ul ul, ol ul {list-style-type: circle;
-}
+.post-preview h2 a {
+  color: $highlight;
+  text-decoration: none;
 
-em, i {font-style: italic;
-}
-
-strong, b {font-weight: bold;
-  color: #540B0E; /* Emphasized text uses accent color */
-}
-
-img {max-width: 100%;
-}
-
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .date {
-  font-style: italic;
-  color: #706C61;
+  font-size: 0.9rem;
+  color: $accent;
 }
 
-// Specify the color of the selection
-::-moz-selection {
-  color: #001011;
-  background: #dcdcdc;
-}
-::selection {
-  color: #001011;
-  background: #dcdcdc;
+.excerpt {
+  color: $text;
+  font-family: 'Merriweather', serif;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+/* FOOTER */
+.site-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+  border-top: 1px solid $accent;
 }
 
-.clearfix:after {
-    clear: both;
+.footer-name {
+  color: $accent;
+  font-weight: 600;
 }
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
-.masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid #fff;
-
-  @include mobile {
-    text-align: center;
-  }
-}
-
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.site-name {
-  margin: 0;
-  color: #540B0E;
-  cursor: pointer;
-  font-family: 'Times New Roman';
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: #fff;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: 'Times New Roman';
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    /*color: $darkGray;*/
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
-}
-
-//
-// .main
-//
-
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid #fff;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid #fff;
-    padding: 0.1em 1em;
-    color: #fff;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-}
-
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  background-color: #fff;
-}
-
-footer {
-  padding: 20px 0;
-  text-align: center;
-}
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
