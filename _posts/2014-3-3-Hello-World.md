@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title of the first post
+title: title of the first post
 ---
 
 body of text
