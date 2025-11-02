@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Druhy post tady
+title: druhy post tady
+date: 2025-11-2 10:00:00
+categories: [/ poezie, / vzpomínka smíšená s touhou]
 ---
 
 sdfbasf
