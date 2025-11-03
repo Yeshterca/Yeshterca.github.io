@@ -167,27 +167,28 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .home-posts .post-title a {
-  color: #000;
+  color: #fff;
   font-weight: 500;
   text-decoration: none;
 }
 
 .home-posts .post-title a:hover {
-  color: #706C61;
+  color: #d9d9d9;
 }
 
 .home-posts .post-category a {
   font-size: 0.9rem;
-  color: #706C61;
+  color: #d9d9d9;
   font-weight: 600;
   text-decoration: none;
 }
 
 .home-posts .post-category a:hover {
-  color: #000;
+  color: #fff;
 }
 
 .category-page {
@@ -227,8 +228,29 @@ body {
 }
 
 .post-title-dots a {
-  background: $background;   /* hide the dotted line behind text */
   padding-right: 0.3rem;
   color: #000;
   text-decoration: none;
 }
+
+/* Background image for homepage */
+.home-background {
+  background-image: url('/images/profile2.jpg'); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem 0;  /* optional vertical padding */
+}
+
+/* Semi-transparent container */
+.home-container {
+  background-color: rgba(000, 0, 0, 0.25); /* white, 50% transparent */
+  padding: 2rem;
+  border-radius: 0px;        /* optional rounding */
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* optional soft shadow */
+  box-sizing: border-box
+}
+

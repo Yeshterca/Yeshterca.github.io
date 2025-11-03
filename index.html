@@ -1,35 +1,35 @@
 ---
 layout: default
 ---
-
-<div class="home-layout">
-  <div class="container">
-    <div class="home-header">
-      <div class="home-title">{{ site.title | default: site.name }}</div>
-      <div class="home-categories">
-        <a href="{{ '/poezie' | relative_url }}">/ poezie</a>
-        <a href="{{ '/oknihach' | relative_url }}">/ o knihách</a>
-        <a href="{{ '/ohudbe' | relative_url }}">/ o hudbě</a>
+<div class="home-background">
+  <div class="home-layout">
+    <div class="container home-container">
+      <div class="home-header">
+        <div class="home-title">{{ site.title | default: site.name }}</div>
+        <div class="home-categories">
+          <a href="{{ '/poezie' | relative_url }}">/ poezie</a>
+          <a href="{{ '/oknihach' | relative_url }}">/ o knihách</a>
+          <a href="{{ '/ohudbe' | relative_url }}">/ o hudbě</a>
+        </div>
       </div>
-    </div>
 
-    <div class="home-posts">
-      <h3>poslední příspěvky</h3>
-      <ul>
-        {% for post in site.posts limit:5 %}
-          <li class="post-item">
-            <div class="post-title-dots">
-              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            </div>
-            <span class="post-category">
-              <a href="{{ '/' | append: post.categories | first | downcase | append: '/' | relative_url }}">
-                {{ post.categories | first | capitalize }}
-              </a>
-            </span>
-          </li>
-        {% endfor %}
-      </ul>
+      <div class="home-posts">
+        <h3>nejnovější příspěvky</h3>
+        <ul>
+          {% for post in site.posts limit:5 %}
+            <li class="post-item">
+              <div class="post-title-dots">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </div>
+              <span class="post-category">
+                <a href="{{ '/' | append: post.categories | first | downcase | append: '/' | relative_url }}">
+                  {{ post.categories | first | capitalize }}
+                </a>
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 </div>
-
