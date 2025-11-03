@@ -2,7 +2,7 @@
 layout: post
 title: druhy post tady
 date: 2025-11-2 10:00:00
-categories: [/ poezie, / vzpomínka smíšená s touhou]
+categories: [poezie, vzpominka]
 ---
 
 sdfbasf

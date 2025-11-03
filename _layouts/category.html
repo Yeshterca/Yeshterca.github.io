@@ -1,18 +1,20 @@
 ---
 layout: default
 ---
-<div class="container category-page">
-  <h1>{{ page.title }}</h1>
 
+<div class="category-page">
+  <h2>{{ page.title }}</h2>
   <ul>
-    {% assign cat = page.category %}
-    {% for post in site.posts %}
-      {% if post.categories contains cat %}
-        <li>
+    {% for post in site.categories[page.category] %}
+      <li class="post-item">
+        <span class="post-title">
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
-        </li>
-      {% endif %}
+        </span>
+        <span class="post-category">
+          {{ page.title }}
+        </span>
+      </li>
     {% endfor %}
   </ul>
 </div>
+

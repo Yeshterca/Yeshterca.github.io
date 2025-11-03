@@ -1,7 +1,7 @@
 ---
 layout: category
-title: / o knihách
-category: / o knihách
+title:  o knihách
+category: oknihach
 permalink: /oknihach/
 ---
 <h1>/ o knihách</h1>
