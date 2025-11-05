@@ -1,7 +1,7 @@
 ---
 layout: page
-title: /karolii
-permalink: /about/
+title: / o karolii
+permalink: /okarolii/
 ---
 
 Some information about you!

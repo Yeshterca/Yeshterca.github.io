@@ -129,13 +129,15 @@ body {
   text-align: right;
   font-size: 1.2rem;
   color: #4e4b44;
-  line-height: 1.6;
+  line-height: 1.2;
   margin-top: 0.5rem;
+  font-weight: bolder;
 
   a {
-    color: #000;
+    color: #1c1c1c;
     font-style: bold;
     text-decoration: none;
+    
 
     &:hover {
       color: #4e4b44;
@@ -143,10 +145,15 @@ body {
   }
 }
 
-.home-title {
-  font-size: 2rem;
+.home-title a {
+  font-size: 2.2rem;
   font-weight: bold;
   color: #706C61;
+  text-decoration: none;
+}
+
+.home-title a:hover {
+  color: #000;
 }
 
 .home-categories {
@@ -154,13 +161,14 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
+  font-weight: bold;
 }
 
 .home-categories a {
   color: #4e4b44;
   font-size: 1.25rem;
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .home-categories a:hover {

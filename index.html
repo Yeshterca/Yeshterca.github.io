@@ -9,14 +9,17 @@ layout: default
 
       <!-- Title + Intro Categories -->
       <div class="home-header">
-        <div class="home-title">{{ site.title | default: site.name }}</div>
+        <div class="home-title">
+          <a href="{{ '/okarolii' | relative_url }}">
+            {{ site.title | default: site.name }}
+          </a>
+        </div>
 
         <div class="home-intro">
-          tvořím <a href="{{ 'poezie' | relative_url }}">poezii</a><br>
-          píšu <a href="{{ 'oliterature' | relative_url }}">o literatuře</a> a
-          <a href="{{ 'ohudbe' | relative_url }}">o hudbě</a><br>
-          sdílím občasná <a href="{{ 'oumeni' | relative_url }}">zamyšlení</a><br>
-          a občas něco <a href="{{ 'foto' | relative_url }}">vyfotím</a>
+          <a href="{{ 'oknihach' | relative_url }}">/ o knihách</a><br>
+          <a href="{{ 'ohudbe' | relative_url }}">/ o hudbě</a><br>
+          <a href="{{ 'oprostoru' | relative_url }}">/ o prostoru</a><br>
+          <a href="{{ 'poezie' | relative_url }}">/ poezie</a><br>
         </div>
       </div>
 
