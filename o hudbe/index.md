@@ -1,7 +1,7 @@
 ---
 layout: category
 title: / o hudbě
-category: / o hudbě
+category: ohudbe
 permalink: /ohudbe/
 ---
 <h1>/ o hudbě</h1>
