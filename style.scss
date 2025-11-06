@@ -38,6 +38,13 @@ body {
 }
 
 /* SITE TITLE */
+/* Container for title + round images */
+.site-title-with-images {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* space between title and images */
+}
+
 .site-title a {
   color: $accent;
   /*font-family: 'Merriweather', serif;*/
@@ -50,6 +57,19 @@ body {
   &:hover {
     color: $accent;
   }
+}
+
+.header-images {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header-images img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;  /* makes them round */
+  object-fit: cover;   /* crop correctly */
+  border: 1px solid #706C61; /* optional border to match theme */
 }
 
 .nav {

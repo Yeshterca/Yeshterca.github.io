@@ -2,7 +2,7 @@
 layout: post
 title: title of the first post
 date: 2014-3-3
-categories: [oknihach]
+categories: [o knihách]
 ---
 
 body of text
