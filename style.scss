@@ -6,6 +6,8 @@ $text: #000;
 $accent: #706C61;
 $highlight: #540B0E;
 
+/* GLOBAL STYLES */
+
 body {
   font-family: 'Inter', sans-serif;
   background: $background;
@@ -18,6 +20,17 @@ body {
   max-width: 900px;  /* same width as posts and header */
   width: 100%;
   margin: 0 auto;    /* centers horizontally */
+}
+
+a {
+  color: $highlight;
+  font-weight: 700;
+  text-decoration: none !important;
+
+  &:hover {
+    color: $accent;
+    text-decoration: none !important;
+  }
 }
 
 
@@ -89,8 +102,10 @@ body {
 
 
 /* CONTENT */
+.page-content,
+.post-content,
 .content {
-  max-width: 900px;
+  max-width: 700px;
   margin: 3rem auto;
 }
 
@@ -103,7 +118,6 @@ body {
 
 .post-preview h2 a {
   color: $accent;
-  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
@@ -313,5 +327,14 @@ body {
   width: 100%;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* optional soft shadow */
   box-sizing: border-box
+}
+
+/* IMAGE FLOATING ON ABOUT PAGE */
+.about-image-wrapper img {
+  float: right;
+  width: 230px;     /* adjust size */
+  height: 230px;    /* keeps it round */
+  object-fit: cover;
+  margin: 0 0 1rem 1.5rem; /* space between text and image */
 }
 
