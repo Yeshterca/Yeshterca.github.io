@@ -4,7 +4,7 @@ title:  / o prostoru
 category: o prostoru
 permalink: /oprostoru/
 ---
-<h1>/ o knihách</h1>
+<h1>/ o prostoru</h1>
 
 <ul>
   {% for post in site.posts %}
