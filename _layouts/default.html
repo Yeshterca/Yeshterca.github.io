@@ -2,9 +2,7 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    {% unless page.url == "/" %}
-      {% include header.html %}
-    {% endunless %}
+    {% include header.html %}
 
     <main class="content">
       {{ content }}

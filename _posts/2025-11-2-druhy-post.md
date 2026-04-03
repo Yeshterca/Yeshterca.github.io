@@ -7,6 +7,8 @@ categories: [poezie, vzpominka]
 
 <br>
 <br>
+
+
 V roce 1820<br>
 zemřela madona<br>
 při drezuře koně
