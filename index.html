@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <div class="home-background">
   <div class="home-layout">
     <div class="container home-container">
@@ -16,18 +15,21 @@ layout: default
         </div>
 
         <div class="home-intro">
+          píšu<br>
           <a href="{{ 'oknihach' | relative_url }}">/ o knihách</a><br>
-          <a href="{{ 'ohudbe' | relative_url }}">/ o hudbě</a><br>
+          <a href="{{ 'oumeni' | relative_url }}">/ o umění</a><br>
           <a href="{{ 'oprostoru' | relative_url }}">/ o prostoru</a><br>
-          ...<br>
-          <a href="{{ 'poezie' | relative_url }}">/ poezie</a><br>
+          <br>
+          tvořím<br>
+          <a href="{{ 'poezie' | relative_url }}">/ poezii</a><br>
+          <a href="{{ 'fotka' | relative_url }}">/  fotku</a><br>
         </div>
       </div>
 
 
         <!-- Latest Posts List -->
       <div class="home-posts">
-        <h3>nejnovější příspěvky</h3>
+        <h3>čti:</h3>
         <ul>
           {% for post in site.posts limit:5 %}
             {% assign cat = post.categories[0] %}

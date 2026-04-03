@@ -14,8 +14,6 @@ body {
   color: $text;
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  line-height: 3 important;
 }
 
 .container {
@@ -46,7 +44,7 @@ a {
   width: 100%;
   z-index: 1000;
   padding: 1rem 1rem;
-  background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+  background: (255, 255, 255, 0.8); /* semi-transparent white */
   backdrop-filter: blur(10px); /* blur effect for background */
   -webkit-backdrop-filter: blur(5px);
   transition: background 0.3s ease, padding 0.3s;
@@ -142,7 +140,6 @@ a {
 
 .excerpt {
   color: $text;
-
   /*font-family: 'Merriweather', serif;*/
 }
 
@@ -326,16 +323,8 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  width: 100vw;
-  min-height: 100vh;
-  max-width: 100vw;
-  margin-left: -50vw;
-  margin-right: -50vw;
   padding: 5rem 0;  /* optional vertical padding */
-  box-sizing: border-box;
+  max-width: 900px;
 }
 
 /* Semi-transparent container */
@@ -358,3 +347,4 @@ a {
   object-fit: cover;
   margin: 0 0 1rem 1.5rem; /* space between text and image */
 }
+
