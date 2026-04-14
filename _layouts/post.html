@@ -9,9 +9,16 @@ layout: default
     {{ content }}
   </div>
 
+  <div style="display:flex; justify-content:right;">
+    <img src="/images/circle2.png" style="width:20px; margin:0; padding:2px; display:block;">
+    <img src="/images/circle1.png" style="width:20px; margin:0; padding:2px; display:block;">
+    <img src="/images/circle3.png" style="width:20px; margin:0; padding:2px; display:block;">
+  </div>
+
   <div class="date">
     Napsáno {{ page.date | date: "%d.%m.%Y" }}
   </div>
 
   {% include disqus.html %}
+  
 </article>

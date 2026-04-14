@@ -10,7 +10,12 @@ layout: default
         <div class="date">
           napsáno {{ post.date | date: "%d.%m.%Y" }}
           {% assign cat = post.categories[0] %}
-          {% if cat %}• <a href="{{ '/' | append:cat | downcase | append:'/' | relative_url }}">{{ cat }}</a>{% endif %}
+          {% if cat %}
+            {% assign cat_page = site.pages | where: "category", cat | first %}
+            {% if cat_page %}
+              • <a href="{{ cat_page.url | relative_url }}">{{ cat }}</a>
+            {% endif %}
+          {% endif %}
         </div>
 
         <div class="entry">
@@ -22,6 +27,11 @@ layout: default
 
           <div class="post-full-content" style="display: none;">
             {{ post.content | markdownify }}
+            <div style="display:flex; justify-content:right;">
+              <img src="/images/circle2.png" style="width:20px; margin:0; padding:2px; display:block;">
+              <img src="/images/circle1.png" style="width:20px; margin:0; padding:2px; display:block;">
+              <img src="/images/circle3.png" style="width:20px; margin:0; padding:2px; display:block;">
+            </div>
           </div>
         </div>
 
